@@ -5,10 +5,11 @@ import { Experience } from "./experience"
 function App() {
   return (
     <>
-    <h1>Hello ji hello</h1>
+    <h1>CV Generator</h1>
     <General/>
     <Education/>
     <Experience/>
+    
     </>
   )
 }
