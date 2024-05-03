@@ -1,0 +1,9 @@
+ul{
+    list-style-type:none;
+}
+
+#root{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
