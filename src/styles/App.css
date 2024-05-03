@@ -1,0 +1,11 @@
+.container{
+    border: 4px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}

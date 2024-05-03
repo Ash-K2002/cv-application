@@ -2,6 +2,8 @@
 import { fieldData } from "./data";
 import { Field } from "./basicFields";
 import { useState } from "react";
+import showIcon from '../assets/seeMore.svg';
+import hideIcon from '../assets/seeLess.svg';
 
 function Education({submitFunc, appData}){
     const [edData, setEdData]=useState({});
@@ -36,7 +38,7 @@ function Education({submitFunc, appData}){
         <section>
             <h2>Education Details</h2>
 
-            <button onClick={showHide}>{(show)?'Hide':'Show'}</button>
+            <button onClick={showHide}><img src={(show)?showIcon:hideIcon} alt={(show)?'show':'hide'} /></button>
         {(show)?<><h3>School Details</h3>
             <ul>{schoolArr}</ul>
             <h3>College Details</h3>

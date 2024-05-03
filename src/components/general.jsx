@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { Field } from "./basicFields";
 import { fieldData } from "./data";
+import showIcon from '../assets/seeMore.svg';
+import hideIcon from '../assets/seeLess.svg';
+
 
 function General({submitFunc, appData}){
     const [genData, setGenData]=useState({});
@@ -29,7 +32,7 @@ function General({submitFunc, appData}){
         <>
         <section>
             <h2>Personal details</h2>
-            <button onClick={showHide}>{(show)?'Hide':'Show'}</button>
+            <button onClick={showHide}><img src={(show)?showIcon:hideIcon} alt={(show)?'show':'hide'} /></button>
         {(show)?<><ul>{renderedArr}</ul>
             <button onClick={handleSubmit}>Submit</button></>:''}
         </section>

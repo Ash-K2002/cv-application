@@ -1,0 +1,15 @@
+.personal-details li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.edu-list, .work-list{
+padding-left: 20px;
+}
+
+.item-name{
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -2,6 +2,9 @@
 import { fieldData } from "./data";
 import { useState } from "react";
 import { Field } from "./basicFields";
+import showIcon from '../assets/seeMore.svg';
+import hideIcon from '../assets/seeLess.svg'
+
 
 function Experience({appData, submitFunc})
 {   const [expData, setExpData]=useState({});
@@ -28,7 +31,7 @@ function showHide(){
         <>
         <section>
            <h2>Work Experience</h2>
-            <button onClick={showHide}>{(show)?'Hide':'Show'}</button>
+            <button onClick={showHide}><img src={(show)?showIcon:hideIcon} alt={(show)?'show':'hide'} /></button>
         {(show)?<><ul>{workArr}</ul>
             <button onClick={handleSubmit}>Submit</button></>:''}
             

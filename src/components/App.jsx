@@ -4,6 +4,7 @@ import { General } from "./general"
 import { Education } from "./education"
 import { Experience } from "./experience"
 import { Output } from "./Output"
+import '../styles/App.css'
 
 function App() {
   const dataDefault =  {
